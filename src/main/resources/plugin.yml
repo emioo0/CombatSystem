@@ -1,0 +1,17 @@
+name: CombatSystem
+version: '1.0.0'
+main: de.emilio.combatSystem.Main
+api-version: '1.21'
+author: Emilio
+commands:
+  combat:
+    description: Combat-System Verwaltung
+    usage: /combat <pvpon|pvpoff|reload|help>
+    permission: combatsystem.use
+permissions:
+  combatsystem.use:
+    description: Basisnutzung des /combat Befehls (Hilfe ansehen)
+    default: true
+  combatsystem.admin:
+    description: PvP umschalten & Reload
+    default: op

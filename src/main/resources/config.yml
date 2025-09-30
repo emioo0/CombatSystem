@@ -1,0 +1,46 @@
+# Code by Emilio
+
+messages:
+  prefix: "&f[&6&lᴄᴏᴍʙᴀᴛꜱʏꜱᴛᴇᴍ&f]"
+  attacker: "&7Du hast &a%target% &7angegriffen und bist jetzt in Combat!"
+  victim: "&7Du wurdest von &c%attacker% &7angegriffen, und bist jetzt in Combat!"
+  actionbar-format: "&cIm Kampf! &7(%s s übrig)"
+  combatlog-broadcast: "&c%player% &fhat sich im Kampf ausgeloggt und ist gestorben!"
+  pvp-death-broadcast: "&c%victim% &fwurde von &a%killer% &fbesiegt!"
+  pearls-remaining: "&eDu hast noch &f%remaining% Enderperlen &eübrig."
+  pearls-no-more: "&cDu kannst im Combat keine weiteren Enderperlen verwenden."
+  trident-blocked: "&cDu kannst im Combat keinen Dreizack verwenden."
+  pvp-enabled: "&7PvP wurde &aaktiviert&7."
+  pvp-disabled: "&7PvP wurde &cdeaktiviert&7."
+  pvp-currently-off: "&cPvP ist aktuell deaktiviert."
+  reloaded: "&aConfig neu geladen."
+
+
+settings:
+  pvp-enabled: true
+  message-cooldown-seconds: 60
+
+  combatlog:
+    kill-player: true
+
+  death:
+    hide-vanilla: true
+
+  enderpearls:
+    limit-in-combat: true
+    limit: 16
+
+  trident:
+    disable-in-combat: true
+
+combat-duration:
+  base: 30
+  # Nach kumuliertem Schaden skaliert der Timer hoch:
+  # 1 Herz = 2.0 Schaden -> 3 Herzen = 6.0
+  threshold1:
+    damage: 6.0
+    seconds: 100
+  threshold2:
+    damage: 12.0
+    seconds: 150
+  max: 150
